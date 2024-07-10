@@ -20,7 +20,7 @@ export default ContentLink;
 
 const CardContainer = styled.div`
     width: calc(33.333% - 20px);
-    background-color: #fff;
+    background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -32,7 +32,7 @@ const CardContainer = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: auto;
+    height: 250px;
 `
 
 const Content = styled.div`

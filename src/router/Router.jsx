@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TopPage from "../components/pages/TopPage";
-import Contact from "../components/pages/Contact";
+import ContactPage from "../components/pages/Contact";
 import BlogList from "../components/pages/BlogList";
 import BlogDetail from "../components/pages/BlogDetail";
-import AboutMe from "../components/pages/AboutMe";
+import About from "../components/pages/About";
 
 export const Router = () => {
     return (
@@ -16,7 +16,7 @@ export const Router = () => {
                 } />
                 <Route exact path="/contact" element={
                     <>
-                    <Contact />
+                    <ContactPage />
                     </>
                 } />
                 <Route exact path="/blog" element={
@@ -26,7 +26,7 @@ export const Router = () => {
                 } />
                 <Route exact path="about" element={
                     <>
-                    <AboutMe />
+                    <About/>
                     </>
                 }/>
                 <Route path="/blog/:id" element={

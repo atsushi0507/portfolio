@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import profile from "../../public/profile_diving.JPG";
 
 const ProfileCard = () => {
   return (
     <Container>
         <PhotoImage
-            src="https://unsplash.it/100/102"
+            src={profile}
             alt="MyProfile"
         />
         <h1>Profile</h1>

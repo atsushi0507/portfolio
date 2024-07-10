@@ -8,7 +8,7 @@ const NavBar = () => {
         <Navigation>
             <Image src={logo} alt="logo" />
             <BaseLink href="/">Home</BaseLink>
-            <BaseLink href="/about">About Me</BaseLink>
+            <BaseLink href="/about">About</BaseLink>
             <BaseLink href="/blog">Blog</BaseLink>
             <BaseLink href="/contact">Contact</BaseLink>
         </Navigation>

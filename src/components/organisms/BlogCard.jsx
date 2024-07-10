@@ -4,20 +4,22 @@ import PrimaryButton from "../atoms/PrimaryButton";
 import styled from "styled-components";
 
 export const BlogCard = ({blog, onClick}) => {
+    console.log(onClick);
     return (
         <Card>
-            <BlogImageWithName image={blog.image} title={blog.title} abstract={blog.abstract} />
-            <PrimaryButton onClick={onClick}>詳細</PrimaryButton>
+            <BlogImageWithName image={blog.mainImage} title={blog.title} abstract={blog.summary} />
+            <ToDetailButton onClick={onClick}>Read More</ToDetailButton>
         </Card>
     );
 }
 
 export default BlogCard;
 
-// const CardContainer = styled.div`
-//     background-color: #fff;
-//     box-shadow: #ddd 0px 0px 4px 2px;
-//     border-radius: 8px;
-//     padding: 16px;
-//     border: 2px solid #faf3f3;
-// `
+const ToDetailButton = styled.button`
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+`
