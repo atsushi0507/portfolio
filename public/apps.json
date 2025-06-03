@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "id": 1,
+            "image": "https://unsplash.it/200/200",
+            "title": "Bitcoin DAQ",
+            "description": "Bitcoin price data acquisition system of Bitflyer-JPY",
+            "link": "https://bitcoin-daq-visualization.streamlit.app"
+        },
+        {
+            "id": 2,
+            "image": "https://unsplash.it/200/201",
+            "title": "Health Hive",
+            "description": "あなたの健康を管理します。あなたにフィットした献立、運動メニューの提案を通じて、無理なく理想のボディーを手に入れましょう！",
+            "link": "https://healthhive.streamlit.app"
+        },
+        {
+            "id": 3,
+            "image": "https://unsplash.it/200/202",
+            "title": "Music Recommendation",
+            "description": "Now under development. To be announced the detail",
+            "link": "none"
+        }
+    ]
+}
