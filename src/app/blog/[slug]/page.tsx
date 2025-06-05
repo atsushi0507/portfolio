@@ -18,5 +18,9 @@ export default async function BlogPostPage({ params }: BlogProps) {
   const post = await getPostBySlug(slug);
   if (!post) notFound();
 
-  return <BlogContent blogData={post} />;
+  return (
+    <div className="bg-gradient-to-br from-gray-100 to-blue-100">
+      <BlogContent blogData={post} />;
+    </div>
+  )
 }

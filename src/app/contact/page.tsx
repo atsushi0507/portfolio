@@ -50,7 +50,7 @@ const ContactPage = () => {
     };
 
     return (
-        <main className="pt-24 max-w-2x1 mx-auto px-4 py-12 text-gray-800">
+        <main className="pt-24 max-w-2x1 mx-auto px-4 py-12 text-gray-800 bg-gradient-to-br from-gray-100 to-blue-100">
             <h1 className="text-3x1 font-bold mb-8  border-b-4 border-blue-500 inline-block">Contact</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <label className="font-semibold text-lg" htmlFor="name">Name:</label>
