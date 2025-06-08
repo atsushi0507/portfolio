@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 // import Image from "next/image";
-import { Github, XIcon } from "lucide-react"; // lucide-react は入っていれば使用可
+import { Github, Instagram, XIcon } from "lucide-react"; // lucide-react は入っていれば使用可
 import React from "react";
 
 const ProfileSection: React.FC = () => {
   return (
     <motion.section
-      className="bg-gradient-to-br from-gray-100 to-blue-100 text-gray-800 py-8 px-4 flex flex-col items-center"
+      className="bg-gray-200 rounded-lg text-gray-800 py-8 px-4 flex flex-col items-center"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -45,6 +45,14 @@ const ProfileSection: React.FC = () => {
             aria-label="Twitter"
           >
             <XIcon className="w-5 h-5 hover:text-blue-800 transition-colors duration-200" />
+          </a>
+          <a
+            href="https://instagram.com/atsushi0507"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+          <Instagram className="w-5 h-5 hover:text-blue-800 transition-colors duration-200" />
           </a>
         </div>
       </div>

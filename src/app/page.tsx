@@ -24,7 +24,7 @@ export default async function HomePage() {
           {/* Web Apps */}
           <h2 className="text-xl font-bold mb-4">Web Application</h2>
           <div className="flex overflow-x-auto space-x-4 pb-4">
-            {AppItems.map((app) => (
+            {AppItems.slice(0, 3).map((app) => (
               <CardContent
                 key={app.title}
                 mainImage={app.mainImage}

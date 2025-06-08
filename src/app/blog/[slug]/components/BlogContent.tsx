@@ -42,7 +42,6 @@ const BlogContent: React.FC<BlogContentProps> = ({ blogData }) => {
 
   const handleLikeClick = async ({slug, isLiked}: {slug: string, isLiked: boolean}) => {
     try {
-      // await incrementLikes(blogData.slug, isLiked);
       await incrementLikes(slug, isLiked);
       setIsLiked(!isLiked);
       setDisplayLikes((prev) => prev + (isLiked ? -1 : 1));
@@ -81,32 +80,6 @@ const BlogContent: React.FC<BlogContentProps> = ({ blogData }) => {
           />
         </div>
       </div>
-      {/* <div className="flex justify-center mb-6">
-        <div className="relative max-w-full max-h-[250px] w-auto h-auto">
-          <Image
-            src={blogData.mainImage}
-            alt="メイン画像"
-            fill
-            className="rounded-xl shadow object-contain"
-            sizes="(max-width: 768px) 100vw, 600px"
-          />
-        </div>
-      </div> */}
-      {/* <div className="flex justify-center mb-6">
-        <div className="max-w-full max-h-[250px] overflow-hidden rounded-xl shadow">
-          <Image
-            src={blogData.mainImage}
-            alt="メイン画像"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="h-auto w-auto max-h-[250px] max-w-full object-contain"
-          />
-        </div>
-      </div> */}
-
-
-
 
       {/* Responsive TOC */}
       {blogData.toc && (

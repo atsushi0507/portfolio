@@ -7,7 +7,6 @@ import { BlogPostList } from '@/lib/posts';
 import { motion } from 'framer-motion';
 import { incrementLikes } from '@/lib/posts';
 import 'dayjs/locale/ja';
-// import Image from 'next/image';
 
 dayjs.locale('ja');
 
