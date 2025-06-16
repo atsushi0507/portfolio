@@ -4,27 +4,13 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeSanitize from "rehype-sanitize";
 import { Heart } from "lucide-react";
-// import BlogPostPage from "../page";
 import { incrementLikes } from "@/lib/posts";
 import { tocToList } from "@/lib/parseToc";
-// import Image from "next/image";
+import { BlogPost } from "@/types/blog";
 
 // memo
 // ![Ironmanランキングのプロット](https://storage.googleapis.com/portfolio-site-blog-images/ironman_ranking_plotly_cards.png)
 // この記法で、本文中からでも GCS の画像を表示できる
-
-type BlogPost = {
-  title: string;
-  mainImage: string;
-  summary: string;
-  content: string;
-  tags: string[];
-  createdAt: Date;
-  updatedAt: Date;
-  likes: number;
-  slug: string;
-  toc?: string;
-};
 
 type BlogContentProps = {
   blogData: BlogPost;

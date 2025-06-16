@@ -10,6 +10,7 @@ const Footer = () => {
                     <FooterLink href="/">Home</FooterLink>
                     <FooterLink href="/about">About</FooterLink>
                     <FooterLink href="/blog">Blog</FooterLink>
+                    <FooterLink href="/apps">Apps</FooterLink>
                     <FooterLink href="/contact">Contact</FooterLink>
                 </nav>
                 <nav className="flex flex-wrap justify-center gap-4 text-sm md:text-base">

@@ -11,8 +11,17 @@ export default async function HomePage() {
     <div className="px-4 sm:px-8 bg-gradient-to-br from-gray-100 to-blue-100">
       {/* Hero Section */}
       <div className="w-full h-[180px] bg-cover bg-center text-white flex items-center justify-center text-2xl font-bold" style={{ backgroundImage: `url(https://unsplash.it/1440/250)` }}>
+      <div className="w-full h-[180px] bg-cover bg-center text-white flex items-center justify-center text-2xl font-bold" style={{ backgroundImage: "/herobar.png" }}>
         Transforming Tomorrow with AI
       </div>
+    </div>
+      {/* <div className="w-full h-[40px] flex items-center justify-center bg-gray-100">
+        <img
+          src="/herobar.png"
+          alt="herobar"
+          className="h-[40px] w-auto"
+        />
+      </div> */}
 
       {/* Main Section */}
       <div className="flex flex-col lg:flex-row mt-8">
@@ -31,6 +40,7 @@ export default async function HomePage() {
                 link={app.link}
                 title={app.title}
                 description={app.description}
+                isApp={true}
               />
             ))}
           </div>
@@ -50,6 +60,7 @@ export default async function HomePage() {
                 link={`/blog/${blog.slug}`}
                 title={blog.title}
                 description={blog.summary}
+                isApp={false}
               />
             ))}
           </div>
