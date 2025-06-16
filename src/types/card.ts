@@ -3,4 +3,5 @@ export type CardType = {
     link: string;
     title: string;
     description: string;
+    isApp: boolean;
 };

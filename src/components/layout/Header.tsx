@@ -26,6 +26,7 @@ const Header = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/blog">Blog</NavLink>
+          <NavLink href="/apps">Apps</NavLink>
           <NavLink href="/contact">Contact</NavLink>
         </nav>
 
@@ -44,6 +45,7 @@ const Header = () => {
           <MobileLink href="/" label="Home" onClick={() => setMenuOpen(false)} />
           <MobileLink href="/about" label="About" onClick={() => setMenuOpen(false)} />
           <MobileLink href="/blog" label="Blog" onClick={() => setMenuOpen(false)} />
+          <MobileLink href="/apps" label="Apps" onClick={() => setMenuOpen(false)} />
           <MobileLink href="/contact" label="Contact" onClick={() => setMenuOpen(false)} />
         </div>
       )}

@@ -1,12 +1,12 @@
 import React from "react";
 import { CardType } from "@/types/card";
 
-const CardContent: React.FC<CardType> = ({ mainImage, link, title, description }) => {
+const CardContent: React.FC<CardType> = ({ mainImage, link, title, description, isApp }) => {
     return (
         <a
             href={link}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={isApp ? "_blank" : undefined}
+            rel={isApp ? "noopener noreferrer" : undefined}
             className="w-64 bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition flex-shrink-0"
         >
             <div className="relative aspect-[4/3] w-full">
